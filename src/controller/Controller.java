@@ -1,6 +1,7 @@
 package controller;
 
 import javax.swing.JOptionPane;
+import java.util.ArrayList;
 
 public class Controller
 {
@@ -8,6 +9,7 @@ public class Controller
 	{
 		// niceLoop();
 		// bigLoop();
+		stupidList();
 		forLoop();
 		whileLoop();
 		loopy();
@@ -84,18 +86,32 @@ public class Controller
 		while (!looped)
 		{
 			loopCount2++;
-			if(loopCount2 % 4 == 0 || loopCount2 % 5 == 0) {
-				sum+=loopCount2;
-			System.out.println(loopCount2);
+			if (loopCount2 % 4 == 0 || loopCount2 % 5 == 0)
+			{
+				sum += loopCount2;
+				System.out.println(loopCount2);
 			}
 			if (loopCount2 >= 1000000)
 			{
 				looped = true;
 			}
-			
+
 		}
 		System.out.println(sum);
-	
+
 	}
 
+	public void stupidList()
+	{
+		ArrayList<String> marbleColor = new ArrayList<String>();
+		marbleColor.add("red");
+		marbleColor.add("green");
+		marbleColor.add("purple");
+		marbleColor.add("magenta");
+		marbleColor.add("blue");
+		for (String colorCurrent : marbleColor)
+		{
+			JOptionPane.showMessageDialog(null, colorCurrent);
+		}
+	}
 }
