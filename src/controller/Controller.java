@@ -100,7 +100,11 @@ public class Controller
 		System.out.println(sum);
 
 	}
-
+/**
+ * stupidList()
+ * Made an array list that added 5 colors and then prints each of those colors.
+ * JOptionPane for gui 
+ */
 	public void stupidList()
 	{
 		ArrayList<String> marbleColor = new ArrayList<String>();
